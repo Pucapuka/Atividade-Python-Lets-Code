@@ -8,8 +8,11 @@ def comandos():                         #inicia a elaboração da função
     
     f = int(input("Digite o último número da lista: ")) #fim da lista
     
-    lista = list(range(i, (f+1)))  #declara uma lista com range de do início ao fim (lembra: um a menos, por isso que coloquei +1
+    s = int(input("digite a razão da lista:")) #de quanto em quanto a lista será ordenada
     
+    lista = list(range(i,f,s))  #declara uma lista com range de do início ao fim (agora com uma razão)
+    
+    print (lista) #não está na atividade, mas acho interessante apresentar a lista (para ver que o último número (f) não é mostrado.
     print(f"o mínimo da lista é {min(lista)}")
     
     print(f"a média da lista é {sum(lista)/len(lista)}") #a média é a soma da lista dividido pela sua quantidade
